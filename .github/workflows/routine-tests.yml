@@ -21,10 +21,11 @@ jobs:
         with:
           poetry-version: ${{ matrix.poetry-version }}
       - name: Install packages
-        run: poetry install  # --no-dev
-      - name: Run flake8-pytest
         run: |
           python -m pip install -U pip
-          pip install grpcio-reflection  # this one cant be installed with poetry
+          pip install grpc-reflection  # this one cant be installed with poetry
+          poetry install  # --no-dev
+      - name: Run flake8-pytest
+        run: |
           poetry run flake8 --exit-zero
           poetry run pytest
