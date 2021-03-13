@@ -1,4 +1,4 @@
-// playground/grpc-related/unary.proto
+// playground/grpc-related
 syntax = "proto3";
 
 package deepl;

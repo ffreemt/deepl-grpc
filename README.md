@@ -3,6 +3,20 @@
 
 deepl grpc, server and client
 
+## Installation
+*   Install ``grpc-reflection``
+    *   ``grpc-reflection`` cannot be installed using `poetry add`. Use ``pip install grpc-reflection`` instead.
+*   Install the rest as usual
+```bash
+not ready yet pip install deepl-grpc
+```
+or
+```bash
+not ready yet poetry add deepl-grpc
+```
+
+or clone the repo and install from it.
+
 ## Usage
 
 ```python
