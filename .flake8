@@ -3,6 +3,8 @@ ignore =
   D203,
   # line too long
   E501
+  #  import not at top of file
+  E402
 per-file-ignores =
   # imported but unused
   __init__.py: F401

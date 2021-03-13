@@ -1,11 +1,10 @@
 {
-	"include": ["tests", "extend_noip"],
+   "include": ["tests", "deepl_grpc"],
   "venvPath": ".venv/Scripts",
   "reportTypeshedErrors": false,
   "reportMissingImports": true,
   "reportMissingTypeStubs": false,
 
   "pythonVersion": "3.7",
-
 	"ignore": []
 }

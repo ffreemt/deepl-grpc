@@ -8,22 +8,36 @@ deepl grpc, server and client
     *   ``grpc-reflection`` cannot be installed using `poetry add`. Use ``pip install grpc-reflection`` instead.
 *   Install the rest as usual
 ```bash
-not ready yet pip install deepl-grpc
+pip install deepl-grpc
 ```
 or
 ```bash
-not ready yet poetry add deepl-grpc
+poetry add deepl-grpc
 ```
 
 or clone the repo and install from it.
 
 ## Usage
 
+### Interactive
+
+*   [Optional] Start the grpc server
 ```python
-from deepl_grpc.deepl_tr import deepl_tr
+python -m deepl_grpc.deepl_server
+```
 
-res = await deepl_tr("test me")
-print(res)
-# '考我 试探我 测试我 试探'
+*   Start the client
+```python
+python -m deepl_grpc.deepl_client  # to chinese
 
-print(await deepl_tr("test me", to_lang="de"))
+# python -m deepl_grpc.deepl_client de  # to german
+```
+
+### WebUI
+Download `grpcui` and run, for example in Windows
+```bash
+grpcui.exe -plaintext 127.0.0.1:50051
+```
+to explore the server in the same manner as Postman for REST.
+
+### More coming soon

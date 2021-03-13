@@ -11,6 +11,8 @@ repository = "https://github.com/ffreemt/deepl-grpc"
 python = "^3.7"
 portalocker = "^2.2.1"
 grpcio = "^1.36.1"
+logzero = "^1.6.3"
+deepl-scraper-pp = "^0.1.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
