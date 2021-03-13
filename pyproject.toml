@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "deepl-grpc"
+version = "0.1.0"
+description = "deepl grpc server and client"
+authors = ["freemt"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/ffreemt/deepl-grpc"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+portalocker = "^2.2.1"
+grpcio = "^1.36.1"
+grpc-reflection = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+tbump = "^6.3.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

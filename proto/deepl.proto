@@ -1,0 +1,20 @@
+// playground/grpc-related/unary.proto
+syntax = "proto3";
+
+package deepl;
+
+service Deepl{
+  // Deepl rpc service.
+ rpc GetServerResponse(Message) returns (MessageResponse) {}
+}
+
+message Message{
+ string message = 1;
+ string from_lang = 2;
+ string to_lang = 3;
+}
+
+message MessageResponse{
+ string message = 1;
+ bool received = 2;
+}

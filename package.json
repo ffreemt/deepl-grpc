@@ -1,0 +1,16 @@
+{
+   "name":"deepl-grpc",
+   "version":"0.1.0",
+   "description":"deepl-grpc, server and client",
+   "main":"index.js",
+   "license":"MIT",
+   "scripts":{
+      "server":"nodemon -w deepl_grpc -e .py -x python deepl_grpc/deepl_server.py",
+      "webui":"../../playground/grpc-related/grpcui.exe -plaintext 127.0.0.1:50051",
+      "pyright":"nodemon -w deepl_grpc -w .venv -e .py -x pyright deepl_grpc",
+      "pytest":"nodemon -w tests -w deepl_grpc -e .py -x pytest tests",
+      "style":"nodemon -w deepl_grpc -w tests -x black tests deepl_grpc && flake8.bat",
+      "pylint":"nodemon -w deepl_grpc -e .py -x pylint deepl_grpc",
+      "test:server":"nodemon -w tests -e .py -x pytest -k server tests"
+   }
+}
