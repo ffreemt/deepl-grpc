@@ -11,6 +11,9 @@
       "pytest":"nodemon -w tests -w deepl_grpc -e .py -x pytest tests",
       "style":"nodemon -w deepl_grpc -w tests -x black tests deepl_grpc && flake8.bat",
       "pylint":"nodemon -w deepl_grpc -e .py -x pylint deepl_grpc",
-      "test:server":"nodemon -w tests -e .py -x pytest -k server tests"
+      "test:server":"nodemon -w tests -e .py -x pytest -k server tests",
+      "test:client_de":"nodemon -w tests -e .py -x pytest -s -k client_de tests",
+      "test:client_zh":"nodemon -w tests -e .py -x pytest -s -k client_zh tests",
+      "test:client":"nodemon -w tests -e .py -x pytest -s -k client tests"
    }
 }

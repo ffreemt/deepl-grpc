@@ -14,11 +14,12 @@ import portalocker
 # only run one instance
 file = open(f"{__file__}.portalocker.lock", "r+")
 try:
-    portalocker.lock(file, portalocker.constants.LOCK_EX)
+    # portalocker.lock(file, portalocker.constants.LOCK_EX)
+    portalocker.lock(file, portalocker.LOCK_EX | portalocker.LOCK_NB)
 except Exception as exc:
     logger.debug(exc)
     logger.info("Another copy is running, exiting...")
-    raise SystemExit(1)
+    raise SystemExit(1) from exc
 
 import grpc
 
