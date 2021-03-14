@@ -23,7 +23,8 @@ jobs:
       - name: Install packages
         run: |
           python -m pip install -U pip
-          pip install grpc-reflection google  # cant be installed with poetry
+          pip install google  # cant be installed with poetry
+          pip install grpcio-reflection
           poetry install  # --no-dev
       - name: Run flake8-pytest
         run: |
