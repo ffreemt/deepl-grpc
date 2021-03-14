@@ -1,7 +1,7 @@
 """Test client."""
 #
 
-from subprocess import Popen
+# from subprocess import Popen
 from time import sleep
 
 from logzero import logger
@@ -46,7 +46,7 @@ def test_client_de():
     # Popen("pythonw -m deepl_grpc.deepl_server", shell=True)
 
     # wait for server to come up if newly started
-    # sleep(14)
+    # sleep(3)
 
     client = DeeplClient()
 
