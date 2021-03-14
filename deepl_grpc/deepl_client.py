@@ -15,17 +15,18 @@ from logzero import logger
 import subprocess
 from subprocess import Popen
 
+cwd = Path(__file__).absolute().parent.as_posix()
+server_file = f"{cwd}/deepl_server.py"
 if os.name in ["posix"]:  # linux and friends
-    cwd = Path(__file__).absolute().parent.as_posix()
-    cmd = f"nohup python {cwd}/deepl_server.py > {cwd}" "/server.out 2>&1 &"
+    cmd = f"nohup python {server_file} > {cwd}" "/server.out 2>&1 &"
     subprocess.Popen(cmd, shell=True)
     logger.info(
         "grpc server running in background, output logged to: %s/server.out", cwd,
     )
 else:
     try:
-        Popen(["pythonw", "deepl_server.py"], shell=True)
-        logger.info("\n\t grpc server running in background\n")
+        Popen(f"pythonw {server_file}", shell=True)
+        logger.info("\n\t [%s] grpc server running in background\n", server_file)
     except Exception as exc:
         logger.debug(exc)
 
