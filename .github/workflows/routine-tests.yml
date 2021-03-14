@@ -23,10 +23,10 @@ jobs:
       - name: Install packages
         run: |
           python -m pip install -U pip
-          pip install google  # cant be installed with poetry
+          # pip install google  # cant be installed with poetry
           pip install grpcio-reflection
           poetry install  # --no-dev
-          sudo apt-get install chromium-browser
+          # sudo apt-get install chromium-browser
       - name: Run flake8-pytest
         run: |
           poetry run flake8 --exit-zero
