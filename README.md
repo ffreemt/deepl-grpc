@@ -4,8 +4,8 @@
 deepl grpc, server and client, cross platform (Windows/MacOS/Linux)
 
 ## Installation
-*   Install ``grpcio-reflection``
-    *   ``grpc-reflection`` cannot be installed using `poetry add`. Use ``pip install grpcio-reflection`` instead.
+*   Install ``grpcio-reflection`` and ``google``
+    *   ``grpc-reflection`` and ``google`` cannot be installed using `poetry add`. Use ``pip install grpcio-reflection google`` instead.
 *   Install the rest as usual
 ```bash
 pip install deepl-grpc

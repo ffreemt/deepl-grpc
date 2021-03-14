@@ -3,6 +3,7 @@
 
 import os
 import sys
+from pathlib import Path
 import grpc
 
 import deepl_grpc.deepl_pb2_grpc as pb2_grpc
@@ -11,6 +12,7 @@ import deepl_grpc.deepl_pb2 as pb2
 from logzero import logger
 
 # start server if not already started
+import subprocess
 from subprocess import Popen
 
 if os.name in ["posix"]:  # linux and friends
