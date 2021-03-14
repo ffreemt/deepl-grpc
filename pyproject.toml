@@ -16,6 +16,7 @@ deepl-scraper-pp = "^0.1.1"
 google = "^3.0.0"
 pysocks = "^1.7.1"
 grpcio-tools = "^1.36.1"
+grpcio-reflection = "^1.36.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

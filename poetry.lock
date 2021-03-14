@@ -164,6 +164,18 @@ protobuf = ["grpcio-tools (>=1.36.1)"]
 
 [[package]]
 category = "main"
+description = "Standard Protobuf Reflection Service for gRPC"
+name = "grpcio-reflection"
+optional = false
+python-versions = "*"
+version = "1.36.1"
+
+[package.dependencies]
+grpcio = ">=1.36.1"
+protobuf = ">=3.6.0"
+
+[[package]]
+category = "main"
 description = "Protobuf code generator for gRPC"
 name = "grpcio-tools"
 optional = false
@@ -582,7 +594,7 @@ docs = ["sphinx", "jaraco.packaging (>=8.2)", "rst.linker (>=1.9)"]
 testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pytest-cov", "pytest-enabler", "jaraco.itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy"]
 
 [metadata]
-content-hash = "193ed1262c8a4566075fe7e65a8eb38d1fdbdf687a505fe1790e70a7cc3ecd29"
+content-hash = "69053b199ec69800af27398cc839519a41a537422d766d4e5a57f110de988238"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -685,6 +697,9 @@ grpcio = [
     {file = "grpcio-1.36.1-cp39-cp39-win32.whl", hash = "sha256:f3f70505207ee1cee65f60a799fd8e06e07861409aa0d55d834825a79b40c297"},
     {file = "grpcio-1.36.1-cp39-cp39-win_amd64.whl", hash = "sha256:f22c11772eff25ba1ca536e760b8c34ba56f2a9d66b6842cb11770a8f61f879d"},
     {file = "grpcio-1.36.1.tar.gz", hash = "sha256:a66ea59b20f3669df0f0c6a3bd57b985e5b2d1dcf3e4c29819bb8dc232d0fd38"},
+]
+grpcio-reflection = [
+    {file = "grpcio-reflection-1.36.1.tar.gz", hash = "sha256:5bf15a4b50eb93d35fdcb425e4a86add0d96437d7ac0098956fcb070e4799e1e"},
 ]
 grpcio-tools = [
     {file = "grpcio-tools-1.36.1.tar.gz", hash = "sha256:80ef584f7b917f575e4b8f2ec59cd4a4d98c2046e801a735f3136b05742a36a6"},
