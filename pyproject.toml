@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "deepl-grpc"
-version = "0.1.0"
+version = "0.1.1"
 description = "deepl grpc server and client"
 authors = ["freemt"]
 license = "MIT"

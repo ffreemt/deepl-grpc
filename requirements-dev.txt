@@ -12,6 +12,8 @@ flake8==3.8.4
 get-ppbrowser==0.1.2
 google==3.0.0
 grpcio==1.36.1
+grpcio-reflection==1.36.1
+grpcio-tools==1.36.1
 importlib-metadata==3.7.2; python_version < "3.8"
 linetimer==0.1.4
 logzero==1.6.3
@@ -21,6 +23,7 @@ more-itertools==8.7.0
 packaging==20.9
 pluggy==0.13.1
 portalocker==2.2.1
+protobuf==3.15.6
 py==1.10.0
 pycodestyle==2.6.0
 pydantic==1.8.1
