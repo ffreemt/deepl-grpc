@@ -48,12 +48,18 @@ client = DeeplClient()
 text = "test this and that"
 with CodeTimer(unit="s"):
     result = client.get_url(message=text)
-print(result)
+# Code block took: 1.99860 s
 
+print(result.message)
+# 试探 左右逢源 检验 审时度势
 
 to_lang = "de"
-result = client.get_url(message=text, to_lang=to_lang,)
-print(result)
+with CodeTimer(unit="s"):
+  result = client.get_url(message=text, to_lang=to_lang,)
+# Code block took: 2.02847 s
+
+print(result.message)
+# "Testen Sie dieses und jenes a Testen Sie dies und das a testen Sie dies und das Testen Sie dieses und jenes"
 
 ```
 
